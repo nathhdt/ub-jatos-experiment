@@ -1,0 +1,45 @@
+.top-logo {
+	margin-top: 10px;
+	max-height: 100px;
+	margin-bottom: 10px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.card {
+	max-width: 680px;
+	margin-top: 30px;
+}
+
+.radio {
+	text-align:right;
+}
+
+.radiocheck {
+	margin-left: 6px;
+}
+
+.bottom {
+	display: block;
+	width: 100%;
+	font-size: .875em;
+	color: #6c757d;
+	text-align: center;
+}
+
+.bottom a {
+	color: #535a5f;
+}
+
+.bottom a:hover {
+	color: #242629;
+}
+
+.footer {
+	text-align: center;
+}
+
+.envoyer {
+	text-align:center;
+}
