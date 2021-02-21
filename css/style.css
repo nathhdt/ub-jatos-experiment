@@ -43,3 +43,8 @@
 .envoyer {
 	text-align:center;
 }
+
+.email-taken {
+	font-size: .875em;
+	color: #dc3545;
+}
