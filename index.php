@@ -1,5 +1,4 @@
 <?php include('head.inc'); ?>
-<?php session_start(); ?>
 
 		<div class="container-sm">
 			<div class="card mx-auto">
@@ -9,16 +8,16 @@
     			<form action="php/questionnaire.php" method="post" class="needs-validation" novalidate>
     				<div class="row mb-2">
     					<div class="col-sm">
-      					<input type="text" class="form-control" placeholder="Nom" name="nom" <?php if(session_id()){echo('value='.$_SESSION['nom']);} ?> required>
+      					<input type="text" class="form-control" placeholder="Nom" name="nom" <?php if(isset($_SESSION['email'])) { echo('value='.$_SESSION['nom']);} ?> required>
     					</div>
     					<div class="col-sm">
-      					<input type="text" class="form-control" placeholder="Prénom" name="prenom" <?php if(session_id()){echo('value='.$_SESSION['prenom']);} ?> required>
+      					<input type="text" class="form-control" placeholder="Prénom" name="prenom" <?php if(isset($_SESSION['email'])) { echo('value='.$_SESSION['prenom']);} ?> required>
     					</div>
   					</div>
 
   					<div class="row mb-2">
     					<div class="col-sm">
-      					<input type="email" class="form-control" placeholder="email@example.com" name="email" <?php if(session_id()){echo('value='.$_SESSION['email']);} ?> required>
+      					<input type="email" class="form-control" placeholder="email@example.com" name="email" <?php if(isset($_SESSION['email'])) { echo('value='.$_SESSION['email']);} ?> required>
                 <?php if (htmlspecialchars($_GET['email']) == 'alreadyTaken'): ?>
                 <div class="email-taken">Cette adresse email est déjà utilisée !</div>
                 <?php endif; ?>

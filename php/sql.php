@@ -1,4 +1,6 @@
 <?php
+
+  // Paramètres de connexion base de données MySQL
   $db_host = 'localhost';
   $db_user = 'lead';
   $db_password = 'motdepasse';
