@@ -1,4 +1,9 @@
 <?php include('head.inc'); ?>
+<?php
+if(!isset($_SESSION['email']) || $_SESSION['email'] = '') {
+	header('Location: index.php');
+}
+?>
 		
 		<div class="container-sm">
 			<div class="card mx-auto">

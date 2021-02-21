@@ -1,5 +1,6 @@
 <?php include('head.inc'); ?>
-		
+<?php session_start(); ?>
+
 		<div class="container-sm">
 			<div class="card mx-auto">
   			<div class="card-body">
