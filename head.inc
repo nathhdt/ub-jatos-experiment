@@ -1,3 +1,4 @@
+<?php include('php/config.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -26,7 +27,6 @@
 	    					</div>
 	    					<div class="col-sm">
 	      						<a href="http://www.cnrs.fr" target="_blank"><img src="images/cnrs.png" class="top-logo" alt="CNRS"></a>
-
 	    					</div>
 	    				</div>
 					</div>
