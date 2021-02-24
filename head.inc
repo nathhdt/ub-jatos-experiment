@@ -5,8 +5,10 @@ session_start();
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Université de Bourgogne - LEAD - Expérience en ligne" />
+		<meta name="author" content="Henri-Joël AKOUGBE, Julien CANAL, Nathan HAUDOT" />
 		<title>uB - Expérience en ligne</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
