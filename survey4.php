@@ -11,6 +11,4 @@ include('head.inc');
 			</div>
 		</div>
 
-    <script src="js/survey.js"></script>
-
 <?php include('foot.inc'); ?>

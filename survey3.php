@@ -12,7 +12,7 @@ include('head.inc');
           <form action="php/commentaires.php" method="post" class="needs-validation" novalidate>
             <div class="row mb-2">
               <div class="col-sm">
-                <label for="exampleFormControlTextarea1">Commentaires</label>
+                <label for="exampleFormControlTextarea1">Commentaires (facultatif)</label>
                 <textarea class="form-control" id="commentaires" name="commentaires" rows="5" required></textarea>
               </div>
             </div>
