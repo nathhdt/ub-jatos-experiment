@@ -1,27 +1,55 @@
-<?php include('head.inc'); ?>
+<?php
+session_start();
+
+// Variables de la session
+$_SESSION['habitudesApprentissage'] = $_POST['habitudesApprentissageRadio'];
+$_SESSION['methodeDesTests'] = $_POST['methodeDesTests'];
+
+if (isset($_POST['frequence'])) {
+  $_SESSION['frequence'] = (int)$_POST['frequence'];
+} else {
+  $_SESSION['frequence'] = 0;
+}
+
+if (isset($_POST['efficace'])) {
+  $_SESSION['efficace'] = (int)$_POST['efficace'];
+} else {
+  $_SESSION['efficace'] = 0;
+}
+
+$_SESSION['materielParticulier'] = $_POST['materielParticulier'];
+
+if (isset($_POST['materielFrequence'])) {
+  $_SESSION['materielFrequence'] = (int)$_POST['materielFrequence'];
+} else {
+  $_SESSION['materielFrequence'] = 0;
+}
+
+$_SESSION['habitudesApprentissageCheck'] = $_POST['habitudesApprentissageCheck'];
+$_SESSION['affirmationVocab2Sens'] = $_POST['affirmationRadio'];
+
+include('head.inc');
+?>
 
 		<div class="container-sm">
-			<div class="card mx-auto">
+			<div class="card mx-auto" style="margin-bottom: 200px;">
   			<div class="card-body">
-    			<h5 class="card-title text-center">Bienvenue à l'expérience « <?php echo($nom_experience); ?> »</h5>
-    			<h6 class="card-subtitle mt-4 mb-4 text-muted">Veuillez d'abord compléter le questionnaire ci-dessous :</h6>
+    			<h5 class="card-title text-center">Merci d'avoir participé à l'expérience « <?php echo($nom_experience); ?> »</h5>
+    			<h6 class="card-subtitle mt-4 mb-4" align="justify">Encore quelques petites informations, et promis c'est fini.</h6>
     			<form action="php/questionnaire.php" method="post" class="needs-validation" novalidate>
     				<div class="row mb-2">
     					<div class="col-sm">
-      					<input type="text" class="form-control" placeholder="Nom" name="nom" <?php if(isset($_SESSION['email'])) { echo('value='.$_SESSION['nom']);} ?> required>
+      					<input type="text" class="form-control" placeholder="Nom" name="nom" required>
     					</div>
     					<div class="col-sm">
-      					<input type="text" class="form-control" placeholder="Prénom" name="prenom" <?php if(isset($_SESSION['email'])) { echo('value='.$_SESSION['prenom']);} ?> required>
+      					<input type="text" class="form-control" placeholder="Prénom" name="prenom" required>
     					</div>
   					</div>
 
   					<div class="row mb-2">
-    					<div class="col-sm">
-      					<input type="email" class="form-control" placeholder="email@example.com" name="email" <?php if(isset($_SESSION['email'])) { echo('value='.$_SESSION['email']);} ?> required>
-                <?php if (htmlspecialchars($_GET['email']) == 'alreadyTaken'): ?>
-                <div class="email-taken">Cette adresse email est déjà utilisée !</div>
-                <?php endif; ?>
-    					</div>
+              <div class="col-sm">
+                <input type="email" class="form-control" placeholder="email@example.com" name="email" <?php if(isset($_SESSION['email'])) { echo('value="'.$_SESSION['email'].'"');} ?> disabled>
+              </div>
       				<div class="col-sm">
         				<select class="form-select" name="age" required>
    								<option value="" disabled>Age</option>
@@ -140,6 +168,7 @@
       				<div class="col-sm form-inline">
     						<select class="form-select" id="niveauEtudes" name="etudes" required>
  									<option selected value="" disabled>Niveau d'études</option>
+                  <option value="Autre">Autre</option>
   								<option value="CAP/BEP">CAP/BEP</option>
   								<option value="Bac">Bac</option>
   								<option value="Bac+1">Bac+1</option>
@@ -160,7 +189,7 @@
     						<select class="form-select" id="filiere" name="filiere" required>
  									<option selected value="" disabled>Filière</option>
   								<option value="Économie-gestion">Économie-gestion</option>
-  								<option value="roit & sciences politiques">Droit & sciences politiques</option>
+  								<option value="Droit & sciences politiques">Droit & sciences politiques</option>
   								<option value="Sciences">Sciences</option>
   								<option value="Sciences humaines & sociales">Sciences humaines & sociales</option>
   								<option value="Sciences de l'ingénieur">Sciences de l'ingénieur</option>
@@ -215,13 +244,14 @@
   							<label class="form-check-label" for="radioLangueXNon">Non</label>
     					</div>
   					</div>
-
-  					<div class="envoyer mt-4 mb-2"> 
-  						<button class="btn btn-primary" type="submit">Envoyer</button>
-  					</div>
+            <div class="envoyer mt-4"> 
+              <button class="btn btn-primary" type="submit">Suivant</button>
+            </div>
   				</form>
   			</div>
 			</div>
+
+      
 		</div>
 
     <script src="js/survey.js"></script>
