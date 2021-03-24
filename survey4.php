@@ -11,7 +11,7 @@ include('head.inc');
 			<div class="card mx-auto">
   			<div class="card-body">
     			<h5 class="card-title text-center">Merci d'avoir participé à la phase finale de l'expérience « <?php echo($nom_experience); ?> »</h5>
-    			<h6 class="card-subtitle mt-4 mb-4" align="justify">Juste avant de terminer nous avons quelques questions rapides sur votre manière d’apprendre habituellement. Merci de répondre le plus spontanément et le plus honnêtement possible, Il n’y a pas de bonne ou de mauvaise réponse.</h6>
+    			<h6 class="card-subtitle mt-4 mb-4" align="justify">Juste avant de terminer nous avons quelques questions rapides sur votre manière d’apprendre habituellement. Merci de répondre le plus spontanément et le plus honnêtement possible. Il n’y a pas de bonne ou de mauvaise réponse.</h6>
     			<form action="php/questionnairePhase2.php" method="post" class="needs-validation" novalidate>
 
             <div class="row mb-2">
