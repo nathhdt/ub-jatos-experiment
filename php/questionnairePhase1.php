@@ -22,7 +22,7 @@ $dp2 = mktime(0, 0, 0, 1, 1, 1901);
 $datePhase2 = date("Y-m-d H:m:s", $dp2);
 $empty = "";
 
-$stmt = $mysqli->prepare('INSERT INTO `resultats`(`datePhase1`, `nom`, `prenom`, `email`, `sujet`, `resultId`, `anneeDeNaissance`, `genre`, `niveauEtudes`, `filiere`, `langueMaternelle`, `langueSwahili`, `commentairesPhase1`, `datePhase2`, `sujetFinal`, `sensHabitudesApprentissage`, `methodeDesTests`, `frequenceMethodeDesTests`, `efficaciteMethodeDesTests`, `materielParticulier`, `frequenceMaterielParticulier`, `pourquoiMaterielParticulier`, `affirmationApprendreVocabulaire2Sens`, `commentairesPhase2`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+$stmt = $mysqli->prepare('INSERT INTO `resultats`(`datePhase1`, `nom`, `prenom`, `email`, `sujet`, `resultId`, `anneeDeNaissance`, `genre`, `niveauEtudes`, `filiere`, `langueMaternelle`, `langueSwahili`, `commentairesPhase1`, `datePhase2`, `sujetFinal`, `sensHabitudesApprentissage`, `methodeDesTests`, `frequenceMethodeDesTests`, `efficaciteMethodeDesTests`, `materielParticulier`, `frequenceMaterielParticulier`, `pourquoiMaterielParticulier`, `affirmationApprendreVocabulaire2Sens`, `commentairesPhase2`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
 
 $stmt->bind_param("ssssiiisssssssissiisisss", $datePhase1, $_SESSION['nom'], $_SESSION['prenom'], $_SESSION['email'], $_SESSION['sujet'], $_SESSION['resultId'], $_SESSION['age'], $_SESSION['genre'], $_SESSION['etudes'], $_SESSION['filiere'], $_SESSION['langueMaternelle'], $_SESSION['langueX'], $empty, $datePhase2, $empty, $empty, $empty, $empty, $empty, $empty, $empty, $empty, $empty, $empty);
 
