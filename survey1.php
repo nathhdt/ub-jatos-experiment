@@ -3,6 +3,8 @@ session_start();
 
 // On récupère le mail de l'expérience JATOS
 $_SESSION['email'] = $_GET['email'];
+$_SESSION['sujet'] = $_GET['sujet'];
+$_SESSION['resultId'] = $_GET['resultId'];
 
 include('head.inc');
 ?>
