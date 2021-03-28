@@ -54,7 +54,7 @@ $empty = "";
 
 $stmt = $mysqli->prepare('UPDATE `resultats` SET `datePhase2` = ?,`sujetFinal` = ?,`resultIdPhase2` = ?,`sensHabitudesApprentissage` = ?,`methodeDesTests` = ?,`frequenceMethodeDesTests` = ?,`efficaciteMethodeDesTests` = ?,`materielParticulier` = ?,`frequenceMaterielParticulier` = ?,`pourquoiMaterielParticulier` = ?,`affirmationApprendreVocabulaire2Sens` = ?,`commentairesPhase2` = ? WHERE `email` = ?');
 
-$stmt->bind_param("ssssiisissss", $datePhase2, $_SESSION['sujet'], $_SESSION['resultIdPhase2'], $_SESSION['habitudesApprentissage'], $_SESSION['methodeDesTests'], $_SESSION['frequence'], $_SESSION['efficace'], $_SESSION['materielParticulier'], $_SESSION['materielFrequence'], $_SESSION['habitudesApprentissageCheck'], $_SESSION['affirmationVocab2Sens'], $empty, $_SESSION['email']);
+$stmt->bind_param("siissiisissss", $datePhase2, $_SESSION['sujet'], $_SESSION['resultIdPhase2'], $_SESSION['habitudesApprentissage'], $_SESSION['methodeDesTests'], $_SESSION['frequence'], $_SESSION['efficace'], $_SESSION['materielParticulier'], $_SESSION['materielFrequence'], $_SESSION['habitudesApprentissageCheck'], $_SESSION['affirmationVocab2Sens'], $empty, $_SESSION['email']);
 
 $stmt->execute();
 
