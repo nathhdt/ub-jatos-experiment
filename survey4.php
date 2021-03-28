@@ -4,6 +4,7 @@ session_start();
 // Variables de la session
 $_SESSION['email'] = $_GET['email'];
 $_SESSION['sujet'] = $_GET['sujet'];
+$_SESSION['resultIdPhase2'] = $_GET['resultId'];
 
 include('head.inc');
 ?>
