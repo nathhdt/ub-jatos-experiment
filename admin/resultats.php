@@ -22,7 +22,7 @@
 	      				<th scope="col">Prénom</th>
 	      				<th scope="col">Email</th>
 	      				<th scope="col">Date phase 1</th>
-	      				<th scope="col">Date phase 2</th>
+	      				<th scope="col">Phase 2 (à passer)</th>
 	    			</tr>
 	  			</thead>
 	  			<tbody>
