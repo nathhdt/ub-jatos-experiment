@@ -13,7 +13,7 @@ include('head.inc');
             <div class="row mb-2">
               <div class="col-sm">
                 <label for="exampleFormControlTextarea1">Commentaires (facultatif)</label>
-                <textarea class="form-control" id="commentaires" name="commentaires" rows="5" required></textarea>
+                <textarea class="form-control" id="commentaires" name="commentaires" rows="5"></textarea>
               </div>
             </div>
             <div class="envoyer mt-4"> 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : sam. 20 mars 2021 à 17:15
+-- Généré le : Dim 04 avr. 2021 à 19:06
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -29,7 +29,7 @@ CREATE TABLE `expeNumber` (
 --
 
 INSERT INTO `expeNumber` (`number`) VALUES
-(3);
+(10);
 
 -- --------------------------------------------------------
 
@@ -39,9 +39,9 @@ INSERT INTO `expeNumber` (`number`) VALUES
 
 CREATE TABLE `resultats` (
   `datePhase1` datetime NOT NULL,
-  `nom` text NOT NULL,
-  `prenom` text NOT NULL,
   `email` text NOT NULL,
+  `sujet` int(11) NOT NULL,
+  `resultId` int(11) NOT NULL,
   `anneeDeNaissance` int(11) NOT NULL,
   `genre` text NOT NULL,
   `niveauEtudes` text NOT NULL,
@@ -50,6 +50,8 @@ CREATE TABLE `resultats` (
   `langueSwahili` text NOT NULL,
   `commentairesPhase1` text NOT NULL,
   `datePhase2` datetime NOT NULL,
+  `sujetFinal` int(11) NOT NULL,
+  `resultIdPhase2` int(11) NOT NULL,
   `sensHabitudesApprentissage` text NOT NULL,
   `methodeDesTests` text NOT NULL,
   `frequenceMethodeDesTests` int(11) NOT NULL,
@@ -65,6 +67,6 @@ CREATE TABLE `resultats` (
 -- Déchargement des données de la table `resultats`
 --
 
-INSERT INTO `resultats` (`datePhase1`, `nom`, `prenom`, `email`, `anneeDeNaissance`, `genre`, `niveauEtudes`, `filiere`, `langueMaternelle`, `langueSwahili`, `commentairesPhase1`, `datePhase2`, `sensHabitudesApprentissage`, `methodeDesTests`, `frequenceMethodeDesTests`, `efficaciteMethodeDesTests`, `materielParticulier`, `frequenceMaterielParticulier`, `pourquoiMaterielParticulier`, `affirmationApprendreVocabulaire2Sens`, `commentairesPhase2`) VALUES
-('2021-03-20 15:03:05', 'HAUDOT', 'Nathan', 'nathan.haudot@outlook.fr', 2000, 'Homme', 'Bac+3', 'Sciences de l\'ingénieur', 'Français', 'Non', 'MONSUPERCOMMENTAIRE', '2021-03-20 16:03:39', 'Langue étrangère vers maternelle', 'Oui', 4, 4, 'Oui', 5, 'Déterminer ce que je sais et ne sais pas', 'Vraie', 'MONSUPERSECONDCOMMENTAIRE');
-
+INSERT INTO `resultats` (`datePhase1`, `email`, `sujet`, `resultId`, `anneeDeNaissance`, `genre`, `niveauEtudes`, `filiere`, `langueMaternelle`, `langueSwahili`, `commentairesPhase1`, `datePhase2`, `sujetFinal`, `resultIdPhase2`, `sensHabitudesApprentissage`, `methodeDesTests`, `frequenceMethodeDesTests`, `efficaciteMethodeDesTests`, `materielParticulier`, `frequenceMaterielParticulier`, `pourquoiMaterielParticulier`, `affirmationApprendreVocabulaire2Sens`, `commentairesPhase2`) VALUES
+('2021-03-28 01:03:22', 'nathan.haudot@outlook.fr', 2, 31, 2000, 'Homme', 'Bac+3', 'Sciences de l\'ingénieur', 'Français', 'Non', 'COM1', '2021-03-28 01:03:28', 2, 31, 'Langue maternelle vers étrangere', 'Oui', 5, 5, 'Oui', 5, 'Les deux', 'Ça dépend', 'COM2'),
+('2021-04-28 01:03:22', 'email@test.fr', 1, 35, 2004, 'Homme', 'Bac', 'Sciences', 'Français', 'Non', 'monsupercommentaire1', '2021-04-28 01:03:28', 2, 31, 'Langue maternelle vers étrangere', 'Oui', 5, 5, 'Oui', 5, 'Les deux', 'Ça dépend', 'COM2');

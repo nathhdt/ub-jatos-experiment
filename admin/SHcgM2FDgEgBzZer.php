@@ -18,9 +18,8 @@
 	  			<thead>
 	    			<tr>
 	      				<th scope="col">#</th>
-	      				<th scope="col">Nom</th>
-	      				<th scope="col">Prénom</th>
 	      				<th scope="col">Email</th>
+	      				<th scope="col">Sujet phase 1</th>
 	      				<th scope="col">Date phase 1</th>
 	      				<th scope="col">Phase 2 (à passer)</th>
 	    			</tr>
@@ -37,7 +36,7 @@ require('../php/sql.php');
 //ini_set('display_errors', 1);
 
 // Perform query 
-if ($result = $mysqli->query('SELECT `datePhase1`, `nom`, `prenom`, `email` FROM `resultats` WHERE 1')) {
+if ($result = $mysqli->query('SELECT `datePhase1`, `email`, `sujet` FROM `resultats` WHERE 1')) {
 
 $i = 1;
 
@@ -48,7 +47,6 @@ $i = 1;
   	$i++;
   	echo '<td>'.$row[1].'</td>';
   	echo '<td>'.$row[2].'</td>';
-  	echo '<td>'.$row[3].'</td>';
   	echo '<td>'.$row[0].'</td>';
 
   	// Add 7 days

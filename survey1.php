@@ -15,14 +15,6 @@ include('head.inc');
           <h5 class="card-title text-center">Merci d'avoir participé à la première phase de l'expérience « <?php echo($nom_experience); ?> »</h5>
           <h6 class="card-subtitle mt-4 mb-4" align="justify">Encore quelques petites informations, et promis c'est fini.</h6>
           <form action="php/questionnairePhase1.php" method="post" class="needs-validation" novalidate>
-            <div class="row mb-2">
-              <div class="col-sm">
-                <input type="text" class="form-control" placeholder="Nom" name="nom" required>
-              </div>
-              <div class="col-sm">
-                <input type="text" class="form-control" placeholder="Prénom" name="prenom" required>
-              </div>
-            </div>
 
             <div class="row mb-2">
               <div class="col-sm">
@@ -30,7 +22,7 @@ include('head.inc');
               </div>
               <div class="col-sm">
                 <select class="form-select" name="age" required>
-                  <option value="" disabled>Année de naissance</option>
+                  <option value="" disabled selected>Année de naissance</option>
                   <option value="2020">2020</option>
                   <option value="2019">2019</option>
                   <option value="2018">2018</option>
@@ -241,17 +233,41 @@ include('head.inc');
 
             <div class="row mt-3 mb-3">
               <div class="col-sm form-inline">
-                <label class="form-check-label" for="radioHomme">Connaissez-vous la langue <?php echo($langue_x); ?> ?</label>
+                <label class="form-check-label" for="radioHomme">Avant cette étude, saviez-vous parler le <?php echo($langue_x); ?> ?</label>
               </div>
               <div class="col form-inline radio">
                 <input class="form-check-input radiocheck" type="radio" name="langueX" id="radioLangueXOui" value="Oui" required>
                 <label class="form-check-label" for="radioLangueXOui">Oui</label>
-                <input class="form-check-input radiocheck" type="radio" name="langueX" id="radioLangueXNotions" value="Notions" required>
-                <label class="form-check-label" for="radioLangueXNotions">J'ai quelques notions</label>
                 <input class="form-check-input radiocheck" type="radio" name="langueX" id="radioLangueXNon" value="Non" required>
                 <label class="form-check-label" for="radioLangueXNon">Non</label>
               </div>
             </div>
+
+
+
+
+
+
+            <div class="row mt-3 mb-3">
+              <div class="col-sm form-inline">
+                <label class="form-check-label" for="radioHomme">Avant cette étude, aviez-vous quelques notions de <?php echo($langue_x); ?> ?</label>
+              </div>
+              <div class="col form-inline radio">
+                <input class="form-check-input radiocheck" type="radio" name="notionsLangueX" id="radioNotionsLangueXOui" value="Oui" required>
+                <label class="form-check-label" for="radioNotionsLangueXOui">Oui</label>
+                <input class="form-check-input radiocheck" type="radio" name="notionsLangueX" id="radioNotionsLangueXNon" value="Non" required>
+                <label class="form-check-label" for="radioNotionsLangueXNon">Non</label>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
             <div class="envoyer mt-4"> 
               <button class="btn btn-primary" type="submit">Suivant</button>
             </div>

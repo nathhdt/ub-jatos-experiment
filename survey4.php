@@ -86,63 +86,7 @@ include('head.inc');
               </div>
 
               <div class="row mb-2">
-                <label align="justify" style="margin-top:10px;"><u>Selon vous, est-elle efficace ou non sur une échelle de 5 points allant de 1 = « Pas du tout » à 5 = « Très efficace » :</u></label>
-              </div>
-              <div class="col form-inline">
-                  <label>Pas du tout</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace1" value="1">
-
-                  <label>Peu efficace</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace2" value="2">
-
-                  <label>Moyennement</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace3" value="3">
-
-                  <label>Efficace</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name=" efficace" id="efficace4" value="4">
-
-                  <label>Très efficace</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace5" value="5">
-                </div>
-              </div>
-
-              <div class="row mb-2">
-                <label align="justify" style="margin-top:10px;"><u>Pour vous tester, utilisez-vous un matériel particulier (cartes mémoire/flashcards, logiciels/applications, etc...) ?</u></label>
-              </div>
-
-              <div class="row mb-2 radio">
-                <div class="col form-inline">
-                  <input class="form-check-input radiocheck" type="radio" name="materielParticulier" id="materielParticulierOui" value="OUi" required>
-                  <label class="form-check-label" for="materielParticulierOui">Oui</label>
-                  <input class="form-check-input radiocheck" type="radio" name="materielParticulier" id="materielParticulierNon" value="Non" required>
-                  <label class="form-check-label" for="materielParticulierNon">Non</label>
-                </div>
-              </div>
-
-              <div class="OUi materiel">
-                <div class="row mb-2">
-                  <label align="justify" style="margin-top:10px;"><u>Si oui, à quelle fréquence ?</u></label>
-                </div>
-                <div class="col form-inline">
-                    <label>Jamais</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence1" value="1">
-
-                    <label>Rarement</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence2" value="2">
-
-                    <label>Quelques fois</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence3" value="3">
-
-                    <label>Souvent</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence4" value="4">
-
-                    <label>Toujours</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence5" value="5">
-                  </div>
-                </div>
-
-                <div class="row mb-2">
-              <label align="justify" style="margin-top:10px;"><u>Quand vous vous testez, pourquoi le faîtes-vous ?</u></label>
+              <label align="justify" style="margin-top:10px;"><u>Quand vous vous testez, pourquoi le faites-vous ?</u></label>
             </div>
 
             <div class="row mb-2">
@@ -173,6 +117,66 @@ include('head.inc');
                 <label for="pourquoi3" align="justify">Les deux</label>
               </div>
             </div>
+
+              
+              </div>
+
+              <div class="row mb-2">
+                <label align="justify" style="margin-top:10px;"><u>Selon vous, est-elle efficace ou non sur une échelle de 5 points allant de 1 = « Pas du tout » à 5 = « Très efficace » :</u></label>
+              </div>
+              <div class="col form-inline">
+                  <label>Pas du tout</label>
+                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace1" value="1">
+
+                  <label>Peu efficace</label>
+                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace2" value="2">
+
+                  <label>Moyennement</label>
+                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace3" value="3">
+
+                  <label>Efficace</label>
+                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name=" efficace" id="efficace4" value="4">
+
+                  <label>Très efficace</label>
+                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace5" value="5">
+                </div>
+
+              <div class="row mb-2">
+                <label align="justify" style="margin-top:10px;"><u>Pour vous tester, utilisez-vous un matériel particulier (cartes mémoire/flashcards, logiciels/applications, etc...) ?</u></label>
+              </div>
+
+              <div class="row mb-2 radio">
+                <div class="col form-inline">
+                  <input class="form-check-input radiocheck" type="radio" name="materielParticulier" id="materielParticulierOui" value="OUi" required>
+                  <label class="form-check-label" for="materielParticulierOui">Oui</label>
+                  <input class="form-check-input radiocheck" type="radio" name="materielParticulier" id="materielParticulierNon" value="NOn" required>
+                  <label class="form-check-label" for="materielParticulierNon">Non</label>
+                </div>
+              </div>
+
+              <div class="OUi materiel">
+                <div class="row mb-2">
+                  <label align="justify" style="margin-top:10px;"><u>Si oui, à quelle fréquence ?</u></label>
+                </div>
+                <div class="col form-inline">
+                    <label>Jamais</label>
+                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence1" value="1">
+
+                    <label>Rarement</label>
+                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence2" value="2">
+
+                    <label>Quelques fois</label>
+                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence3" value="3">
+
+                    <label>Souvent</label>
+                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence4" value="4">
+
+                    <label>Toujours</label>
+                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence5" value="5">
+                  </div>
+                </div>
+
+                
 
                 <div class="row mb-2">
               <label align="justify" style="margin-top:10px;"><u>Selon vous, l’affirmation « on retient mieux le vocabulaire quand il est appris dans les deux sens (langue maternelle vers langue étrangère et inversement) » est :</u></label>
@@ -215,10 +219,12 @@ include('head.inc');
               <div class="col">
                 <label for="affirmation4" align="justify">Ça dépend</label>
               </div>
+
             </div>
               </div>
             </div>
-  					<div class="envoyer mt-4" style="margin-bottom: 200px;"> 
+            
+  					<div class="envoyer mt-4" style="margin-bottom: 200px;">
   						<button class="btn btn-primary" type="submit">Suivant</button>
   					</div>
   				</form>
@@ -232,14 +238,20 @@ include('head.inc');
       $(function() {
         var $radios = $('input:radio[name=methodeDesTests]');
         if($radios.is(':checked') === false) {
-          $radios.filter('[value=Oui]').prop('checked', true);
+          $radios.filter('[value=Non]').prop('checked', true);
+          var target = $(".non");
+          $(".msg").not(target).hide();
+          $(target).show();
         }
       });
 
       $(function() {
         var $radios = $('input:radio[name=materielParticulier]');
         if($radios.is(':checked') === false) {
-          $radios.filter('[value=OUi]').prop('checked', true);
+          $radios.filter('[value=NOn]').prop('checked', true);
+          var target = $(".NOn");
+          $(".materiel").not(target).hide();
+          $(target).show();
         }
       });
 
