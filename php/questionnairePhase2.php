@@ -35,7 +35,12 @@ if (isset($_POST['materielFrequence'])) {
   $_SESSION['materielFrequence'] = 0;
 }
 
-$_SESSION['habitudesApprentissageCheck'] = $_POST['habitudesApprentissageCheck'];
+if (isset($_POST['habitudesApprentissageCheck'])) {
+  $_SESSION['habitudesApprentissageCheck'] = $_POST['habitudesApprentissageCheck'];
+} else {
+  $_SESSION['habitudesApprentissageCheck'] = "";
+}
+
 $_SESSION['affirmationVocab2Sens'] = $_POST['affirmationRadio'];
 
 echo $_SESSION['email'];
