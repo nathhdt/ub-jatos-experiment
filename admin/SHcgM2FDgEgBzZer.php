@@ -22,6 +22,7 @@
 	      				<th scope="col">Sujet phase 1</th>
 	      				<th scope="col">Date phase 1</th>
 	      				<th scope="col">Phase 2 (à passer)</th>
+	      				<th scope="col">Lien phase 2</th>
 	    			</tr>
 	  			</thead>
 	  			<tbody>
@@ -58,6 +59,27 @@ $i = 1;
   	$newDate = strtotime('+7 days', $initDate);
 
   	echo '<td><strong>'.date("d M Y H:i", $newDate).'</strong></td>';
+
+
+
+
+
+  	$fichierLiensPhase2 = "../linksphase2.txt";
+	$listeLiensPhase2 = file($fichierLiensPhase2);
+	$URLExperience = $listeLiensPhase2[(int)$row[2] - 1];
+
+
+
+	echo '<td><a href="'.$URLExperience.'">Sujet '.$row[2].'</a></td>';
+
+
+
+
+
+
+
+
+
   }
 
   // Free result set

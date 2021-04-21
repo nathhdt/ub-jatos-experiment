@@ -1,0 +1,16 @@
+http://193.52.246.243:8080/publix/39/start?batchId=174&generalMultiple
+http://193.52.246.243:8080/publix/40/start?batchId=175&generalMultiple
+http://193.52.246.243:8080/publix/41/start?batchId=176&generalMultiple
+http://193.52.246.243:8080/publix/42/start?batchId=177&generalMultiple
+http://193.52.246.243:8080/publix/43/start?batchId=178&generalMultiple
+http://193.52.246.243:8080/publix/44/start?batchId=179&generalMultiple
+http://193.52.246.243:8080/publix/45/start?batchId=180&generalMultiple
+http://193.52.246.243:8080/publix/46/start?batchId=181&generalMultiple
+http://193.52.246.243:8080/publix/47/start?batchId=182&generalMultiple
+http://193.52.246.243:8080/publix/48/start?batchId=183&generalMultiple
+http://193.52.246.243:8080/publix/49/start?batchId=184&generalMultiple
+http://193.52.246.243:8080/publix/50/start?batchId=185&generalMultiple
+http://193.52.246.243:8080/publix/51/start?batchId=186&generalMultiple
+http://193.52.246.243:8080/publix/52/start?batchId=187&generalMultiple
+http://193.52.246.243:8080/publix/53/start?batchId=188&generalMultiple
+http://193.52.246.243:8080/publix/54/start?batchId=189&generalMultiple
