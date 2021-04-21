@@ -3,9 +3,6 @@ session_start();
 
 // Variables de la session
 $_SESSION['email'] = $_POST['email'];
-echo $_SESSION['email'];
-$_SESSION['sujet'] = $_GET['sujet'];
-$_SESSION['resultIdPhase2'] = $_GET['resultId'];
 
 include('head.inc');
 ?>
@@ -92,7 +89,7 @@ include('head.inc');
 
             <div class="row mb-2">
               <div class="col-1">
-                <input class="form-check-input radiocheck" type="radio" name="habitudesApprentissageCheck" id="pourquoi1" value="Cela me permet d'apprendre" required>
+                <input class="form-check-input radiocheck" type="radio" name="habitudesApprentissageCheck" id="pourquoi1" value="Cela me permet d'apprendre">
               </div>
               <div class="col">
                 <label for="pourquoi1" align="justify">Cela me permet d’apprendre</label>
@@ -101,7 +98,7 @@ include('head.inc');
 
             <div class="row mb-2">
               <div class="col-1">
-                <input class="form-check-input radiocheck" type="radio" name="habitudesApprentissageCheck" id="pourquoi2" value="Déterminer ce que je sais et ne sais pas" required>
+                <input class="form-check-input radiocheck" type="radio" name="habitudesApprentissageCheck" id="pourquoi2" value="Déterminer ce que je sais et ne sais pas">
               </div>
               
               <div class="col">
@@ -111,7 +108,7 @@ include('head.inc');
 
             <div class="row mb-2">
               <div class="col-1">
-                <input class="form-check-input radiocheck" type="radio" name="habitudesApprentissageCheck" id="pourquoi3" value="Les deux" required>
+                <input class="form-check-input radiocheck" type="radio" name="habitudesApprentissageCheck" id="pourquoi3" value="Les deux">
               </div>
               
               <div class="col">
