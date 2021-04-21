@@ -11,5 +11,5 @@ $stmt->execute();
 $mysqli->close();
 
 // Fin de l'expérience
-header('Location: ../survey6.php');
+header('Location: ../survey7.php');
 ?>

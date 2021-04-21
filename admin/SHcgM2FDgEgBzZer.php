@@ -47,13 +47,17 @@ $i = 1;
   	$i++;
   	echo '<td>'.$row[1].'</td>';
   	echo '<td>'.$row[2].'</td>';
-  	echo '<td>'.$row[0].'</td>';
+
+  	$initDate = strtotime($row[0]);
+
+
+  	echo '<td>'.date("d M Y H:i", $initDate).'</td>';
 
   	// Add 7 days
-  	$initDate = strtotime($row[0]);
+  	
   	$newDate = strtotime('+7 days', $initDate);
 
-  	echo '<td><strong>'.date("Y-m-d H:i:s", $newDate).'</strong></td>';
+  	echo '<td><strong>'.date("d M Y H:i", $newDate).'</strong></td>';
   }
 
   // Free result set

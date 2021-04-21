@@ -7,6 +7,7 @@ session_start();
 //ini_set('display_errors', 1);
 
 // Variables de la session
+$_SESSION['email'] = $_POST['email'];
 $_SESSION['age'] = (int)$_POST['age'];
 $_SESSION['genre'] = $_POST['genre'];
 $_SESSION['etudes'] = $_POST['etudes'];

@@ -2,7 +2,6 @@
 session_start();
 
 // On récupère le mail de l'expérience JATOS
-$_SESSION['email'] = $_GET['email'];
 $_SESSION['sujet'] = $_GET['sujet'];
 $_SESSION['resultId'] = $_GET['resultId'];
 
@@ -18,7 +17,7 @@ include('head.inc');
 
             <div class="row mb-2">
               <div class="col-sm">
-                <input type="email" class="form-control" placeholder="email@example.com" name="email" <?php if(isset($_SESSION['email'])) { echo('value="'.$_SESSION['email'].'"');} ?> disabled>
+                <input type="email" class="form-control" placeholder="email@example.com" name="email" required>
               </div>
               <div class="col-sm">
                 <select class="form-select" name="age" required>

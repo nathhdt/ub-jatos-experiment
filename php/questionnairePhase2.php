@@ -65,7 +65,7 @@ $stmt->execute();
 $mysqli->close();
 
 // Prochaine page
-header('Location: ../survey5.php');
+header('Location: ../survey6.php');
 
 
 
