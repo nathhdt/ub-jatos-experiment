@@ -3,8 +3,8 @@ require('sql.php');
 session_start();
 
 // Montrer le détail des erreurs MySQL
-//ini_set('error_reporting', -1);
-//ini_set('display_errors', 1);
+ini_set('error_reporting', -1);
+ini_set('display_errors', 1);
 
 // Variables de la session
 $_SESSION['habitudesApprentissage'] = $_POST['habitudesApprentissageRadio'];
@@ -26,7 +26,7 @@ $_SESSION['materielParticulier'] = $_POST['materielParticulier'];
 
 if ($_SESSION['materielParticulier'] == 'OUi')
 {
-	$_SESSION['materielParticulier'] = 'Oui';
+	$_SESSION['materielParticulier'] = $_POST['typeMaterielParticulier'];
 }
 
 if (isset($_POST['materielFrequence'])) {
@@ -64,7 +64,7 @@ $stmt->bind_param("siissiisissss", $datePhase2, $_SESSION['sujet'], $_SESSION['r
 $stmt->execute();
 
 // Echo les erreurs MySQL
-//echo 'Error '.$mysqli->errno.': '.$mysqli->error.'<br/>';
+echo 'Error '.$mysqli->errno.': '.$mysqli->error.'<br/>';
 
 // Ferme la connexion SQL
 $mysqli->close();

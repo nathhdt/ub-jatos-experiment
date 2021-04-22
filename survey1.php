@@ -13,6 +13,7 @@ include('head.inc');
         <div class="card-body">
           <h5 class="card-title text-center">Merci d'avoir participé à la première phase de l'expérience « <?php echo($nom_experience); ?> »</h5>
           <h6 class="card-subtitle mt-4 mb-4" align="justify">Encore quelques petites informations, et promis c'est fini.</h6>
+          <h6 class="card-subtitle mt-4 mb-4" align="justify">Tout d’abord, nous aurons besoin d’une adresse mail valide que vous consultez régulièrement. Elle sera seulement utilisée pour vous envoyer le lien de la seconde partie de l’étude dans une semaine et elle nous permettra de relier les données recueillies aujourd’hui et la semaine prochaine.</h6>
           <form action="php/questionnairePhase1.php" method="post" class="needs-validation" novalidate>
 
             <div class="row mb-2">
@@ -185,7 +186,7 @@ include('head.inc');
                 <label class="col-form-label align-middle" for="filiere">Votre filière :</label>
               </div>
               <div class="col-sm form-inline">
-                <select class="form-select" id="filiere" name="filiere" required>
+                <select class="form-select" id="filiere" name="filiere" onchange="showDiv('hidden_div', this);showDiv('hidden_div2', this)" required>
                   <option selected value="" disabled>Filière</option>
                   <option value="Économie-gestion">Économie-gestion</option>
                   <option value="Droit & sciences politiques">Droit & sciences politiques</option>
@@ -199,6 +200,16 @@ include('head.inc');
                   <option value="Lettres & langues">Lettres & langues</option>
                   <option value="Autre">Autre</option>
                 </select>
+              </div>
+            </div>
+
+
+            <div class="row mt-2 mb-2">
+              <div id="hidden_div" class="col-sm form-inline">
+                <label class="col-form-label align-middle" for="filiereAutre">Vous pouvez préciser :</label>
+              </div>
+              <div id="hidden_div2" class="col-sm form-inline">
+                <input type="text" class="form-control" placeholder="..." name="filiereAutreInput">
               </div>
             </div>
 
@@ -277,6 +288,12 @@ include('head.inc');
       
     </div>
 
+    <script>
+      function showDiv(divId, element)
+      {
+        document.getElementById(divId).style.display = element.value == "Autre" ? 'block' : 'none';
+      }
+    </script>
     <script src="js/survey.js"></script>
 
 <?php include('foot.inc'); ?>

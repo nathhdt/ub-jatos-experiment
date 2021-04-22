@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : Dim 04 avr. 2021 à 19:06
+-- Généré le : jeu. 22 avr. 2021 à 18:01
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -48,6 +48,7 @@ CREATE TABLE `resultats` (
   `filiere` text NOT NULL,
   `langueMaternelle` text NOT NULL,
   `langueSwahili` text NOT NULL,
+  `notionsLangueSwahili` text NOT NULL,
   `commentairesPhase1` text NOT NULL,
   `datePhase2` datetime NOT NULL,
   `sujetFinal` int(11) NOT NULL,
@@ -67,6 +68,5 @@ CREATE TABLE `resultats` (
 -- Déchargement des données de la table `resultats`
 --
 
-INSERT INTO `resultats` (`datePhase1`, `email`, `sujet`, `resultId`, `anneeDeNaissance`, `genre`, `niveauEtudes`, `filiere`, `langueMaternelle`, `langueSwahili`, `commentairesPhase1`, `datePhase2`, `sujetFinal`, `resultIdPhase2`, `sensHabitudesApprentissage`, `methodeDesTests`, `frequenceMethodeDesTests`, `efficaciteMethodeDesTests`, `materielParticulier`, `frequenceMaterielParticulier`, `pourquoiMaterielParticulier`, `affirmationApprendreVocabulaire2Sens`, `commentairesPhase2`) VALUES
-('2021-03-28 01:03:22', 'nathan.haudot@outlook.fr', 2, 31, 2000, 'Homme', 'Bac+3', 'Sciences de l\'ingénieur', 'Français', 'Non', 'COM1', '2021-03-28 01:03:28', 2, 31, 'Langue maternelle vers étrangere', 'Oui', 5, 5, 'Oui', 5, 'Les deux', 'Ça dépend', 'COM2'),
-('2021-04-28 01:03:22', 'email@test.fr', 1, 35, 2004, 'Homme', 'Bac', 'Sciences', 'Français', 'Non', 'monsupercommentaire1', '2021-04-28 01:03:28', 2, 31, 'Langue maternelle vers étrangere', 'Oui', 5, 5, 'Oui', 5, 'Les deux', 'Ça dépend', 'COM2');
+INSERT INTO `resultats` (`datePhase1`, `email`, `sujet`, `resultId`, `anneeDeNaissance`, `genre`, `niveauEtudes`, `filiere`, `langueMaternelle`, `langueSwahili`, `notionsLangueSwahili`, `commentairesPhase1`, `datePhase2`, `sujetFinal`, `resultIdPhase2`, `sensHabitudesApprentissage`, `methodeDesTests`, `frequenceMethodeDesTests`, `efficaciteMethodeDesTests`, `materielParticulier`, `frequenceMaterielParticulier`, `pourquoiMaterielParticulier`, `affirmationApprendreVocabulaire2Sens`, `commentairesPhase2`) VALUES
+('2021-04-22 17:04:09', 'nathan.haudot@outlook.fr', 5, 5, 2000, 'Homme', 'Bac+3', 'ESIREM', 'Français', 'Non', 'Non', '/', '2021-04-22 17:04:21', 5, 37, 'Les deux sens (maternelle/étrangère et inversement)', 'Oui', 3, 4, 'Appli iOS Babbel', 3, 'Déterminer ce que je sais et ne sais pas', 'Pas d\'avis', '/');

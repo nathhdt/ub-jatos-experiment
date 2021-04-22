@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-// Variables de la session
-$_SESSION['email'] = $_POST['email'];
-
 include('head.inc');
 ?>
 
@@ -48,7 +45,7 @@ include('head.inc');
             </div>
 
             <div class="row mb-2">
-              <label align="justify" style="margin-top:10px;"><u>Quand vous apprenez, utilisez-vous la méthode des tests (=  réaliser des tests d'auto-évaluation ou des exercices sur les contenus à apprendre) ?</u></label>
+              <label align="justify" style="margin-top:30px;"><u>Quand vous apprenez, utilisez-vous la méthode des tests (=  réaliser des tests d'auto-évaluation ou des exercices sur les contenus à apprendre) ?</u></label>
             </div>
 
             <div class="row mb-2 radio">
@@ -62,29 +59,30 @@ include('head.inc');
 
             <div class="Oui msg">
               <div class="row mb-2">
-                <label align="justify" style="margin-top:10px;"><u>À quelle fréquence utilisez-vous la méthode des tests sur une échelle de 5 points allant de 1 = « Jamais » à 5 = « Toujours » :</u></label>
+                <label align="justify" style="margin-top:30px;"><u>À quelle fréquence utilisez-vous la méthode des tests sur une échelle de 5 points allant de 1 = « Jamais » à 5 = « Toujours » :</u></label>
               </div>
               <div class="row mb-2">
                 <div class="col form-inline">
-                  <label>Jamais</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="frequence" id="frequence1" value="1">
-
-                  <label>Rarement</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="frequence" id="frequence2" value="2">
-
-                  <label>Quelques fois</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="frequence" id="frequence3" value="3">
-
-                  <label>Souvent</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="frequence" id="frequence4" value="4">
-
-                  <label>Toujours</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="frequence" id="frequence5" value="5">
+                  <input class="form-check-input radiocheck" type="radio" name="frequence" id="frequence1" value="1">
+                  <label style="margin-right:10px;">Jamais</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="frequence" id="frequence2" value="2">
+                  <label style="margin-right:10px;">Rarement</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="frequence" id="frequence3" value="3">
+                  <label style="margin-right:10px;">Quelques fois</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="frequence" id="frequence4" value="4">
+                  <label style="margin-right:10px;">Souvent</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="frequence" id="frequence5" value="5">
+                  <label style="margin-right:10px;">Toujours</label>
+                  
                 </div>
               </div>
 
               <div class="row mb-2">
-              <label align="justify" style="margin-top:10px;"><u>Quand vous vous testez, pourquoi le faites-vous ?</u></label>
+              <label align="justify" style="margin-top:30px;"><u>Quand vous vous testez, pourquoi le faites-vous ?</u></label>
             </div>
 
             <div class="row mb-2">
@@ -116,28 +114,10 @@ include('head.inc');
               </div>
             </div>
 
-            <div class="row mb-2">
-                <label align="justify" style="margin-top:10px;"><u>Selon vous, la méthode des tests est-elle efficace ou non sur une échelle de 5 points allant de 1 = « Pas du tout » à 5 = « Très efficace » :</u></label>
-              </div>
-              <div class="col form-inline">
-                  <label>Pas du tout</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace1" value="1">
-
-                  <label>Peu efficace</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace2" value="2">
-
-                  <label>Moyennement</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace3" value="3">
-
-                  <label>Efficace</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name=" efficace" id="efficace4" value="4">
-
-                  <label>Très efficace</label>
-                  <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="efficace" id="efficace5" value="5">
-                </div>
+              
 
             <div class="row mb-2">
-                <label align="justify" style="margin-top:10px;"><u>Pour vous tester, utilisez-vous un matériel particulier (cartes mémoire/flashcards, logiciels/applications, etc...) ?</u></label>
+                <label align="justify" style="margin-top:30px;"><u>Pour vous tester, utilisez-vous un matériel particulier (cartes mémoire/flashcards, logiciels/applications, etc...) ?</u></label>
               </div>
 
               <div class="row mb-2 radio">
@@ -150,38 +130,79 @@ include('head.inc');
               </div>
 
               <div class="OUi materiel">
+
+
+
+
                 <div class="row mb-2">
-                  <label align="justify" style="margin-top:10px;"><u>À quelle fréquence ?</u></label>
+                  <label align="justify" style="margin-top:30px;"><u>À quelle fréquence ?</u></label>
                 </div>
                 <div class="col form-inline">
-                    <label>Jamais</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence1" value="1">
+                    <input class="form-check-input radiocheck" type="radio" name="materielFrequence" id="materielFrequence1" value="1">
+                    <label style="margin-right:10px;">Jamais</label>
+                    
+                    <input class="form-check-input radiocheck" type="radio" name="materielFrequence" id="materielFrequence2" value="2">
+                    <label style="margin-right:10px;">Rarement</label>
+                    
+                    <input class="form-check-input radiocheck" type="radio" name="materielFrequence" id="materielFrequence3" value="3">
+                    <label style="margin-right:10px;">Quelques fois</label>
+                    
+                    <input class="form-check-input radiocheck" type="radio" name="materielFrequence" id="materielFrequence4" value="4">
+                    <label style="margin-right:10px;">Souvent</label>
+                    
+                    <input class="form-check-input radiocheck" type="radio" name="materielFrequence" id="materielFrequence5" value="5">
+                    <label style="margin-right:10px;">Toujours</label>
+                    
+                </div>
 
-                    <label>Rarement</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence2" value="2">
 
-                    <label>Quelques fois</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence3" value="3">
+                <div class="row mt-2 mb-2">
+                    <div class="col-sm form-inline">
+                      <label class="col-form-label align-middle" for="typeMaterielParticulier" style="margin-top:30px;">Vous pouvez préciser le type de matériel :</label>
+                    </div>
+                    <div class="col-sm form-inline">
+                      <input type="text" class="form-control" placeholder="Appli, carte mémoire, ..." name="typeMaterielParticulier"  style="margin-top:30px;">
+                    </div>
+                </div>
 
-                    <label>Souvent</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence4" value="4">
 
-                    <label>Toujours</label>
-                    <input class="form-check-input radiocheck" style="margin-right:10px;" type="radio" name="materielFrequence" id="materielFrequence5" value="5">
-                  </div>
+
+
+
+
+
                 </div>
 
               
               </div>
 
-              
+              <div class="row mb-2">
+                <label align="justify" style="margin-top:30px;"><u>Selon vous, la méthode des tests est-elle efficace ou non sur une échelle de 5 points allant de 1 = « Pas du tout » à 5 = « Très efficace » :</u></label>
+              </div>
+              <div class="col form-inline">
+                  <input class="form-check-input radiocheck" type="radio" name="efficace" id="efficace1" value="1" required>
+                  <label style="margin-right:10px;">Pas du tout</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="efficace" id="efficace2" value="2" required>
+                  <label style="margin-right:10px;">Peu efficace</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="efficace" id="efficace3" value="3" required>
+                  <label style="margin-right:10px;">Moyennement</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="efficace" id="efficace4" value="4" required>
+                  <label style="margin-right:10px;">Efficace</label>
+                  
+                  <input class="form-check-input radiocheck" type="radio" name="efficace" id="efficace5" value="5" required>
+                  <label style="margin-right:10px;">Très efficace</label>
+                  
+                </div>
 
               
 
                 
 
                 <div class="row mb-2">
-              <label align="justify" style="margin-top:10px;"><u>Selon vous, l’affirmation « on retient mieux le vocabulaire quand il est appris dans les deux sens (langue maternelle vers langue étrangère et inversement) » est :</u></label>
+              <label align="justify" style="margin-top:30px;"><u>Selon vous, l’affirmation « on retient mieux le vocabulaire quand il est appris dans les deux sens (langue maternelle vers langue étrangère et inversement) » est :</u></label>
             </div>
 
             <div class="row mb-2">

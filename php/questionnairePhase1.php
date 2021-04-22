@@ -11,7 +11,16 @@ $_SESSION['email'] = $_POST['email'];
 $_SESSION['age'] = (int)$_POST['age'];
 $_SESSION['genre'] = $_POST['genre'];
 $_SESSION['etudes'] = $_POST['etudes'];
-$_SESSION['filiere'] = $_POST['filiere'];
+
+if ($_POST['filiere'] == 'Autre')
+{
+	$_SESSION['filiere'] = $_POST['filiereAutreInput'];
+}
+else
+{
+	$_SESSION['filiere'] = $_POST['filiere'];
+}
+
 $_SESSION['langueMaternelle'] = $_POST['langueMaternelle'];
 $_SESSION['langueX'] = $_POST['langueX'];
 $_SESSION['notionsLangueX'] = $_POST['notionsLangueX'];

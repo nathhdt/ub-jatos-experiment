@@ -48,3 +48,11 @@
 	font-size: .875em;
 	color: #dc3545;
 }
+
+#hidden_div {
+    display: none;
+}
+
+#hidden_div2 {
+    display: none;
+}
