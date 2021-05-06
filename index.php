@@ -20,6 +20,8 @@
               </label>
             </div>
             
+            <p style="color:#c0392b;margin-top:30px;margin-bottom:30px;">Attention : il est fortement recommandé d'utiliser le navigateur <strong>Google Chrome</strong>, auquel cas l'expérience peut ne pas se dérouler correctement.</p>
+
             <div class="envoyer mt-4"> 
               <button class="btn btn-primary" type="submit">Suivant</button>
             </div>
